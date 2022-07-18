@@ -1,0 +1,110 @@
+/* UNIVERSAL STYLES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: seashell;
+    font-size: 22px;
+    background-color: black;
+    opacity: 0.9;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    background-color: rgb(36, 36, 36);
+}
+
+/* NAV & LOGO */
+nav {
+    border-bottom: 2px solid red;
+
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-grow: 0;
+    justify-content: flex-end;
+    height: 69px;
+    width: 100%;
+}
+
+.nav-list li a {
+    color: #fff;
+    border: 1px solid black;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 1em;
+}
+
+.nav-list li a:hover {
+    color: red;
+    transition-delay: 0.1s;
+}
+
+
+.logo {
+    width: 190px;
+    height: 50px;
+    margin: 10px;
+    background: url("../images/img-tea-cozy-logo.png") no-repeat;
+    background-size: contain;
+}
+
+/* BANNER/MISSION */
+#mission {
+    height: 700px;
+    background: url("../images/img-mission-background.jpg") center center no-repeat;
+}
+
+.mission-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-top: 250px; */
+    height: 7em;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    line-height: 1.3em;
+    opacity: 50%;
+}
+
+/* FEATUED */
+#featured {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.tea-img {
+    width: 300px;
+    height: 200px;
+}
+
+/* LOCATIONS */
+#locations {
+    height: 500px;
+    background: url("../images/img-locations-background.jpg") center center no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.loc-box {
+    width: 300px;
+    padding: 15px;
+    line-height: 2em;
+    background-color: black;
+    text-align: center;
+    margin: 15px 40px;
+
+}
+
+/* FOOTER */
