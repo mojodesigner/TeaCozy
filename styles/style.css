@@ -10,27 +10,27 @@ body {
     color: seashell;
     font-size: 22px;
     background-color: black;
-    opacity: 0.9;
 }
 
 .container {
     display: flex;
-    width: 100%;
-    background-color: rgb(36, 36, 36);
+    align-items: center;
 }
 
 /* NAV & LOGO */
 nav {
+    display: flex;
+    align-items: center;
     border-bottom: 2px solid red;
-
+    width: 100%;
 }
 
 .nav-list {
     list-style: none;
     display: flex;
     align-items: center;
-    flex-grow: 0;
     justify-content: flex-end;
+    flex-wrap: wrap;
     height: 69px;
     width: 100%;
 }
@@ -50,11 +50,14 @@ nav {
 
 
 .logo {
-    width: 190px;
+    /* width: 190px; */
+    display: flex;
+    justify-content: flex-start;
+    /* background: url("../images/img-tea-cozy-logo.png") no-repeat;
+    background-size: contain; */
     height: 50px;
-    margin: 10px;
-    background: url("../images/img-tea-cozy-logo.png") no-repeat;
-    background-size: contain;
+    margin: 20px;
+  
 }
 
 /* BANNER/MISSION */
@@ -63,25 +66,50 @@ nav {
     background: url("../images/img-mission-background.jpg") center center no-repeat;
 }
 
-.mission-content {
+.mission-title {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    /* margin-top: 250px; */
-    height: 7em;
+    height: 6em;
     width: 100%;
     background-color: black;
     text-align: center;
     line-height: 1.3em;
-    opacity: 50%;
+    opacity: 70%;
 }
 
-/* FEATUED */
+/* FEATURED */
 #featured {
-    display: flex;
     justify-content: center;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
     
+}
+
+.featured-title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    line-height: 2em;
+}
+
+.tea-card-parent {
+    margin-top: 20px;
+    max-width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.tea-card-child {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+    line-height: 1.3em;
 }
 
 .tea-img {
@@ -95,6 +123,25 @@ nav {
     background: url("../images/img-locations-background.jpg") center center no-repeat;
     display: flex;
     justify-content: center;
+    margin: 50px;
+    flex-direction: column;
+}
+
+.locations-title {
+    /* display: flex;
+    flex-direction: column; */
+    width: 100%;
+    text-align: center;
+    line-height: 2em;
+}
+
+.location-parent {
+    margin-top: 20px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
 }
 
 .loc-box {
@@ -102,9 +149,23 @@ nav {
     padding: 15px;
     line-height: 2em;
     background-color: black;
+    opacity: 70%;
     text-align: center;
     margin: 15px 40px;
-
+    
+    
 }
 
 /* FOOTER */
+footer {
+    margin: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+}
